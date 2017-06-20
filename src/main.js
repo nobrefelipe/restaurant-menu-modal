@@ -1,10 +1,10 @@
 import Vue from 'vue'
-import App from './App.vue'
+import RestaurantMenuModal from './rmm-App.vue'
 
 new Vue({
 
-  el: '#app',
+  el: '#restaurant-menu-modal',
 
-  render: h => h(App)
+  render: h => h(RestaurantMenuModal)
 
 });

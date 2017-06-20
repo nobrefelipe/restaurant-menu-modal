@@ -1,3 +1,49 @@
-.menu-items {
+.rmm-menu-items {
+
+  float: left;
+  
+  width: 750px;
+  
+  display: flex;
+
+  justify-content:space-between;
+  
+  .rmm-item{
+
+    float: left;
+
+    width: 350px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.1);
+
+
+    &-cover{
+
+
+
+    }//.cover
+
+
+    &-main{
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      text-align: center;
+
+      padding: 20px 10px;
+
+    }//.main
+
+
+  }//.rmm-item
+
 
 }
