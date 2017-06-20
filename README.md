@@ -1,6 +1,8 @@
-# restaurant-menu-modal
+# Restaurant Menu Modal
 
-> Vue.js lab project for www.nomade.studio website
+Vue.js lab project for `www.nomade.studio` website
+
+
 
 ## Build Setup
 
@@ -16,3 +18,4 @@ npm run build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
