@@ -11,10 +11,19 @@
 <script>
 
   import rmmMenuItems from './components/menu-items/index.vue';
+  import clickOutside from './directives/click-outside';
+  import fadeIn from './directives/fadeIn';
 
   export default {
 
     name: 'restaurant-menu-modal',
+
+    directives:{
+
+      clickOutside,
+      fadeIn
+
+    },
 
     components:{
 
@@ -36,6 +45,8 @@
 
   @import url('https://fonts.googleapis.com/css?family=Raleway:400,500|Spectral:300,500');
 
+  *{box-sizing: border-box}
+
   #restaurant-menu-modal{
 
     font-family: 'Spectral', serif;
@@ -45,6 +56,12 @@
     padding: 0;
 
     color: #999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
 
 
     p{
@@ -57,24 +74,13 @@
     }
 
 
-    .small-title{
-
-      font-size: 22px;
-
-      line-height: 28px;
-
-      color: #555;
-
-    }
-
-
     .large-title{
 
-      font-size: 32px;
+      font-size: 40px;
 
-      line-height: 40px;
+      line-height: 50px;
 
-      margin: 20px 0 0 0;
+      margin: 20px 0 5px 0;
 
       color: #555;
 
@@ -92,6 +98,13 @@
       font-size: 13px;
 
       color: #bbb;
+
+    }
+
+
+    .has-transition{
+
+      transition: all .3s ease-in;
 
     }
 
