@@ -14,13 +14,25 @@
 
       <span class="category-title">pasture for life</span>
 
-        <span class="large-title">Some Title</span>
+        <span class="large-title" v-if="!isActive">Fresh Steak</span>
 
-        <p>
+        <span class="large-title" v-if="isActive">Fresh Steak And Locally Farm Produced.</span>
+
+        <p v-if="!isActive">
 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pulvinar urna in orci gravida feugiat.
 
         </p>
+
+        <span class="more-content" v-if="isActive">
+
+            <p v-fade-in="600">{{ data }}</p>
+
+            <img v-fade-in="800" v-if="isActive" src="/src/assets/steak2.jpg" alt="Some Title">
+
+        </span>
+
+
 
     </div>
 

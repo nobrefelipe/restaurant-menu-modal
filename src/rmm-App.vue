@@ -45,7 +45,7 @@
 
   @import url('https://fonts.googleapis.com/css?family=Raleway:400,500|Spectral:300,500');
 
-  *{box-sizing: border-box}
+  *{box-sizing: border-box; margin: 0; padding: 0;}
 
   #restaurant-menu-modal{
 
@@ -70,6 +70,14 @@
 
       font-weight: 300;
 
+      margin: 15px 0;
+
+      @media all and (max-width: 900px){
+
+        line-height: 22px;
+
+      }
+
 
     }
 
@@ -78,11 +86,21 @@
 
       font-size: 40px;
 
-      line-height: 50px;
+      line-height: 45px;
 
       margin: 20px 0 5px 0;
 
       color: #555;
+
+
+      @media all and (max-width: 900px){
+
+        font-size: 30px;
+
+        line-height: 35px;
+
+      }
+
 
     }
 
