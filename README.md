@@ -1,6 +1,10 @@
 # Restaurant Menu Modal
 
-Vue.js lab project for `www.nomade.studio` website
+Vue.js lab project for `www.nomade.studio` website.
+
+This simulates a fake restaurant menu item opening effect, going to more details about the food.
+
+It uses Vue.js and also simulated a rest api call in order to get more details once clicked.
 
 
 

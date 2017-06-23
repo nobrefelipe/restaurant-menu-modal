@@ -56,7 +56,10 @@ export default  {
 
         }, 400);
 
-      }else{
+      }
+
+      // if not active
+      else{
 
         // In Animation Starts
         host.classList.add('animating-in');
